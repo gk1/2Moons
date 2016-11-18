@@ -350,7 +350,6 @@ class ShowOverviewPage extends AbstractGamePage
                 ':lunaID'   => $PLANET['id_luna']
             ), 'state');
 
-
 			if ($IfFleets > 0) {
 				$this->sendJSON(array('message' => $LNG['ov_abandon_planet_not_possible']));
 			} elseif ($USER['id_planet'] == $PLANET['id']) {
